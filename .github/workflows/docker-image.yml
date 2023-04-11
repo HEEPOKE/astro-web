@@ -36,7 +36,7 @@ jobs:
             whoami
             cd astro-web
             sudo docker login --username=${{ secrets.DOCKERHUB_USERNAME }} --password=${{ secrets.DOCKERHUB_TOKEN }}
-            sudo docker stop 150
+            sudo docker rm -f 4c5
             sudo docker-compose down
             sudo docker-compose pull
             sudo docker-compose up -d
