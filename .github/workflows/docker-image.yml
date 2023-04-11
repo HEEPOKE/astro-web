@@ -21,3 +21,21 @@ jobs:
         with:
           push: true
           tags: heepoke/astro-web:dev
+  connect-to-server:
+    needs: docker
+    runs-on: ubuntu-latest
+    steps:
+      - name: connect to server
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME_SSH }}
+          password: ${{ secrets.PASSWORD_SSH }}
+          port: ${{ secrets.PORT_SSH }}
+          script: |
+            whoami
+            docker login --username=${{ secrets.DOCKERHUB_USERNAME }} --password=${{ secrets.DOCKERHUB_TOKEN }}
+            docker compose down
+            docker compose pull
+            docker compose up -d
+            docker system prune -f
