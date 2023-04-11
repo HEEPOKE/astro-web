@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: cd app
-        run: cd app
+        run: ls
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
