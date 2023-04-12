@@ -19,5 +19,7 @@ jobs:
           script: |
             cd astro-web/
             git pull
-            /home/ubuntu/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.nvm/versions/node/v18.15.0/bin/yarn
-            /home/ubuntu/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.nvm/versions/node/v18.15.0/bin/yarn dev --host
+            export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v18.15.0/bin
+            yarn 
+            yarn dev --host
+            
