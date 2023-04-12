@@ -4,8 +4,6 @@ FROM node:19-alpine
 # Set the working directory
 WORKDIR /app
 
-RUN git pull 
-
 # Install dependencies
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile

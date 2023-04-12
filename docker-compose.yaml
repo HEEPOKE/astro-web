@@ -1,9 +1,12 @@
-version: '3.8'
+version: '3.9' 
+
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  app: 
+    build: . 
+    image: astro-web:dev 
     ports:
-      - "3000:3000"
-    command: ["yarn", "dev", "--host"]
+      - "3000:3000" 
+    volumes:
+      - .:/app 
+      - /app/node_modules 
+    command: yarn dev --host 0.0.0.0
