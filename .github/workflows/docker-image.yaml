@@ -34,6 +34,7 @@ jobs:
           port: ${{ secrets.PORT_SSH }}
           script: |
             whoami
+            cd astro-web/
             sudo docker login --username=${{ secrets.DOCKERHUB_USERNAME }} --password=${{ secrets.DOCKERHUB_TOKEN }}
             sudo docker-compose down
             sudo docker-compose pull
