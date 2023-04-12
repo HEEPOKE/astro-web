@@ -35,6 +35,5 @@ jobs:
           script: |
             cd astro-web/
             git pull
-            export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v18.15.0/bin/yarn
-            yarn
-            yarn dev --host
+            /home/ubuntu/.nvm/versions/node/v18.15.0/bin/yarn
+            /home/ubuntu/.nvm/versions/node/v18.15.0/bin/yarn dev --host
