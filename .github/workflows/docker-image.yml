@@ -36,8 +36,8 @@ jobs:
             whoami
             cd astro-web
             sudo docker login --username=${{ secrets.DOCKERHUB_USERNAME }} --password=${{ secrets.DOCKERHUB_TOKEN }}
-            sudo docker network create astro-web_default
-            sudo docker pull heepoke/astro-web:dev
+            sudo docker-compose down
+            sudo docker-compose pull
             sudo docker-compose up -d
             sudo docker system prune -f
             
