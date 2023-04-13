@@ -1,7 +1,7 @@
 <?php
-  $webhook_url = 'https://discord.com/api/webhooks/1095956990120972328/6vfXl1NeW9VCk0MPK4wI0KzDcFI5rwGYqYULKw-jQN6XouqnCd7z6yalKmUJA5193FGz';
+  $webhook_url = 'https://discord.com/api/webhooks/1095956977198317588/bw08WWE7NX_IDBHmLQj9B96iDtLi2QSGSczDsABkYxqOD6oAbv5Seb9ehivrimPEDuMz';
 
-  $message = array('content' => 'ไอ้กากบาส!');
+  $message = array('content' => 'AI KAK BASYKE!!!!!');
 
   $curl = curl_init($webhook_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
