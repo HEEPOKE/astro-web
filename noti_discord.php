@@ -1,6 +1,7 @@
 <?php
   $webhook_url = 'https://discord.com/api/webhooks/1095956977198317588/bw08WWE7NX_IDBHmLQj9B96iDtLi2QSGSczDsABkYxqOD6oAbv5Seb9ehivrimPEDuMz';
 
+
   $message = array('content' => 'AI KAK BASUKE!!!!!');
 
   $curl = curl_init($webhook_url);
