@@ -23,4 +23,5 @@ jobs:
             yarn 
             yarn build
             yarn dev --host
+            php noti_discord.php
             
