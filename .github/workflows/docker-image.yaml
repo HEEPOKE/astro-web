@@ -22,6 +22,4 @@ jobs:
             export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v18.15.0/bin
             yarn 
             yarn build
-            php noti_discord.php
-            yarn dev --host
-            
+            php noti_discord.php            
