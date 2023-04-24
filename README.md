@@ -1,7 +1,7 @@
 # Astro Starter Kit: Basics
 
 ```
-yarb create astro -- --template basics
+yarn create astro -- --template basics
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
